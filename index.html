@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seunghan Lee</title>
+<meta name="description" content="Seunghan Lee — Deep Learning Engineer / Researcher. Time series, representation learning, diffusion models, LLMs for time series.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#222;
+    --muted:#666;
+    --link:#1772d0;
+    --link-hover:#f09228;
+    --rule:#e6e6e6;
+    --badge-c:#1772d0;
+    --badge-w:#2e8b57;
+    --badge-j:#9b59b6;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:#fff;
+    margin:0;
+    line-height:1.55;
+    font-size:16px;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:40px 22px 70px;}
+  a{color:var(--link);text-decoration:none;}
+  a:hover{color:var(--link-hover);}
+
+  /* Header */
+  header.intro{display:flex;gap:28px;align-items:flex-start;}
+  .intro .text{flex:1 1 auto;}
+  .intro h1{font-size:30px;margin:0 0 2px;font-weight:700;letter-spacing:.2px;}
+  .intro h1 .kr{font-weight:400;color:var(--muted);font-size:22px;margin-left:8px;}
+  .intro .role{margin:8px 0 0;color:var(--ink);}
+  .intro .role b{font-weight:700;}
+  .links{margin-top:12px;font-size:15px;color:var(--muted);}
+  .links a{white-space:nowrap;}
+  .links .sep{color:#bbb;margin:0 7px;}
+  .photo{flex:0 0 150px;}
+  .photo img{
+    width:150px;height:150px;object-fit:cover;border-radius:50%;
+    border:1px solid var(--rule);background:#f3f4f6;
+  }
+  .photo .ph{
+    width:150px;height:150px;border-radius:50%;border:1px solid var(--rule);
+    display:flex;align-items:center;justify-content:center;
+    font-size:40px;color:#9aa0a6;background:#f3f4f6;
+  }
+
+  /* Sections */
+  section{margin-top:34px;}
+  h2{
+    font-size:20px;font-weight:700;margin:0 0 14px;padding-bottom:6px;
+    border-bottom:1px solid var(--rule);
+  }
+  p{margin:0 0 12px;}
+  .muted{color:var(--muted);}
+
+  /* News */
+  .news{max-height:none;}
+  .news ul{list-style:none;margin:0;padding:0;}
+  .news li{display:flex;gap:12px;margin-bottom:7px;}
+  .news .when{flex:0 0 64px;color:var(--muted);font-variant-numeric:tabular-nums;}
+  .news .what{flex:1 1 auto;}
+
+  /* Generic two-col entry lists (experience, education) */
+  .entry{margin-bottom:14px;}
+  .entry .top{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+  .entry .title{font-weight:700;}
+  .entry .date{color:var(--muted);white-space:nowrap;}
+  .entry .sub{color:var(--muted);}
+
+  /* Publications */
+  .legend{font-size:14px;color:var(--muted);margin-bottom:16px;}
+  .badge{
+    display:inline-block;min-width:34px;text-align:center;
+    font-size:12px;font-weight:700;color:#fff;border-radius:4px;
+    padding:1px 6px;margin-right:3px;vertical-align:middle;
+  }
+  .b-c{background:var(--badge-c);}
+  .b-w{background:var(--badge-w);}
+  .b-j{background:var(--badge-j);}
+  .pub{display:flex;gap:12px;margin-bottom:16px;}
+  .pub .tag{flex:0 0 46px;padding-top:1px;}
+  .pub .body{flex:1 1 auto;}
+  .pub .ptitle{font-weight:700;}
+  .pub .authors{color:var(--ink);}
+  .pub .me{font-weight:700;text-decoration:underline;}
+  .pub .venue{color:var(--muted);font-style:italic;}
+  .pub .note{color:var(--link-hover);font-weight:700;}
+  .pub .meta a{font-size:14px;}
+  .eq{color:var(--muted);}
+
+  .award li,.service li{margin-bottom:6px;}
+  ul.tight{margin:0;padding-left:20px;}
+
+  footer{margin-top:46px;padding-top:16px;border-top:1px solid var(--rule);
+    color:var(--muted);font-size:13px;text-align:center;}
+
+  @media (max-width:560px){
+    header.intro{flex-direction:column-reverse;align-items:center;text-align:center;}
+    .links a{white-space:normal;}
+    .news li{flex-direction:column;gap:0;}
+    .news .when{flex-basis:auto;}
+    .intro .role,.links{text-align:center;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== Header ===== -->
+  <header class="intro">
+    <div class="text">
+      <h1>Seunghan Lee<span class="kr">이승한</span></h1>
+      <p class="role">
+        Deep Learning Engineer / Researcher at <b>KRAFTON</b><br>
+        <span class="muted">ML R&amp;D Team · AI Research Center</span>
+      </p>
+      <p class="role muted">
+        Ph.D. in Statistics &amp; Data Science, Yonsei University
+      </p>
+      <div class="links">
+        <a href="mailto:seunghan9613@yonsei.ac.kr">Email</a>
+        <span class="sep">/</span>
+        <a href="https://seunghan96.github.io/assets/pdf/SeunghanLee_CV.pdf">CV</a>
+        <span class="sep">/</span>
+        <a href="https://scholar.google.co.kr/citations?user=XCBNwBQAAAAJ&hl=en">Google Scholar</a>
+        <span class="sep">/</span>
+        <a href="https://github.com/seunghan96">GitHub</a>
+        <span class="sep">/</span>
+        <a href="https://seunghan96.github.io">Blog</a>
+        <span class="sep">/</span>
+        <a href="https://www.linkedin.com/in/seunghan-lee-0bba49169/">LinkedIn</a>
+      </div>
+    </div>
+    <div class="photo">
+      <!-- Add your headshot at assets/profile.jpg ; falls back to initials -->
+      <img id="headshot" src="assets/profile.jpg" alt="Seunghan Lee">
+    </div>
+  </header>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <p>
+      I am a Deep Learning Engineer / Researcher at <a href="https://www.krafton.com">KRAFTON</a>
+      (ML R&amp;D Team, Applied DL Dept., AI Research Center). I received my integrated
+      M.S./Ph.D. in Statistics and Data Science at
+      <a href="https://www.yonsei.ac.kr">Yonsei University</a>, co-advised by
+      Prof. Taeyoung Park (DSLab) and Prof. Kibok Lee (ML Lab). Previously, I was a
+      research intern at Naver Cloud (HyperCLOVA X) and SK Telecom.
+    </p>
+    <p>
+      My research centers on <b>deep learning for time series</b> — including
+      representation/self-supervised learning, diffusion models, foundation models and
+      LLMs for time series, financial time-series modeling, and multimodal /
+      vision-language learning. I also write about AI on my
+      <a href="https://seunghan96.github.io">blog</a> (1,400+ posts).
+    </p>
+  </section>
+
+  <!-- ===== News ===== -->
+  <section id="news" class="news">
+    <h2>News</h2>
+    <ul>
+      <li><span class="when">2026.06</span><span class="what">Four papers accepted to <b>KDD 2026</b> workshops (MILETS, GMLLM) and the main track.</span></li>
+      <li><span class="when">2026.05</span><span class="what">Paper accepted to <b>ICML 2026</b> (Mitigating Label Shift in Tabular In-Context Learning).</span></li>
+      <li><span class="when">2026.04</span><span class="what">Paper accepted to <b>ICASSP 2026</b> (Dataset-Driven Channel Masks).</span></li>
+      <li><span class="when">2025.05</span><span class="what">Joined <b>KRAFTON</b> as a Deep Learning Engineer / Researcher.</span></li>
+      <li><span class="when">2025.05</span><span class="what">Paper accepted to <b>ICML 2025</b> (Channel Normalization for Time Series Channel Identification).</span></li>
+      <li><span class="when">2024.09</span><span class="what">Paper accepted to <b>NeurIPS 2024</b> (ANT) — later received the Outstanding Paper Award from the Korean AI Association.</span></li>
+      <li><span class="when">2024.01</span><span class="what">Two papers accepted to <b>ICLR 2024</b> — SoftCLT (<b>Spotlight</b>, top 5%) and PITS.</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== Research interests ===== -->
+  <section id="research">
+    <h2>Research Interests</h2>
+    <ul class="tight">
+      <li>Deep learning with time-series data</li>
+      <li>Representation / self-supervised learning &amp; diffusion models</li>
+      <li>LLMs for time series, time-series foundation models, financial time-series modeling</li>
+      <li>Vision-language models &amp; multimodal learning</li>
+    </ul>
+  </section>
+
+  <!-- ===== Publications ===== -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="legend">
+      <span class="badge b-c">C</span> Conference &nbsp;
+      <span class="badge b-w">W</span> Workshop &nbsp;
+      <span class="badge b-j">J</span> Journal &nbsp; · &nbsp;
+      <span class="eq">* equal contribution &nbsp; † co-corresponding author</span>
+    </p>
+
+    <!-- 2026 -->
+    <div class="pub">
+      <div class="tag"><span class="badge b-c">C7</span></div>
+      <div class="body">
+        <div class="ptitle">FinTexTS: A Financial Text-Paired Time-Series Dataset</div>
+        <div class="authors">J. Lee, S. Park, …, <span class="me">Seunghan Lee</span></div>
+        <div class="venue">KDD, 2026</div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-c">C6</span></div>
+      <div class="body">
+        <div class="ptitle">Mitigating Label Shift in Tabular In-Context Learning</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, et al.</div>
+        <div class="venue">ICML, 2026</div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-c">C5</span></div>
+      <div class="body">
+        <div class="ptitle">Dataset-Driven Channel Masks in Transformers for Multivariate Time Series</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, Taeyoung Park, Kibok Lee</div>
+        <div class="venue">ICASSP, 2026</div>
+      </div>
+    </div>
+
+    <!-- 2025 -->
+    <div class="pub">
+      <div class="tag"><span class="badge b-c">C4</span></div>
+      <div class="body">
+        <div class="ptitle">Channel Normalization for Time Series Channel Identification</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, Taeyoung Park<sup>†</sup>, Kibok Lee<sup>†</sup></div>
+        <div class="venue">ICML, 2025</div>
+        <div class="meta"><a href="https://arxiv.org/abs/2506.00432">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="pub">
+      <div class="tag"><span class="badge b-c">C3</span></div>
+      <div class="body">
+        <div class="ptitle">ANT: Adaptive Noise Schedule for Time Series Diffusion Models</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, Kibok Lee<sup>†</sup>, Taeyoung Park<sup>†</sup></div>
+        <div class="venue">NeurIPS, 2024</div>
+        <div><span class="note">Outstanding Paper Award</span> <span class="muted">— Korean AI Association</span></div>
+        <div class="meta"><a href="https://arxiv.org/abs/2410.14488">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-c">C2</span></div>
+      <div class="body">
+        <div class="ptitle">Learning to Embed Time Series Patches Independently</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, Taeyoung Park, Kibok Lee</div>
+        <div class="venue">ICLR, 2024</div>
+        <div class="muted">Preliminary version: NeurIPS Workshop (SSL: Theory &amp; Practice), 2023 — <span class="note">Oral (top 4)</span></div>
+        <div class="meta"><a href="https://arxiv.org/abs/2312.16427">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-c">C1</span></div>
+      <div class="body">
+        <div class="ptitle">Soft Contrastive Learning for Time Series</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, Taeyoung Park, Kibok Lee</div>
+        <div class="venue">ICLR, 2024 &nbsp;·&nbsp; <span class="note">Spotlight (top 5%)</span></div>
+        <div class="muted">Preliminary version: NeurIPS Workshop (SSL: Theory &amp; Practice), 2023</div>
+        <div class="meta"><a href="https://arxiv.org/abs/2312.16424">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <!-- Workshops -->
+    <div class="pub">
+      <div class="tag"><span class="badge b-w">W7</span></div>
+      <div class="body">
+        <div class="ptitle">AdaTKG: Adaptive Memory for Temporal Knowledge Graph Reasoning</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, et al.</div>
+        <div class="venue">KDD Workshop (GMLLM), 2026</div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-w">W6</span></div>
+      <div class="body">
+        <div class="ptitle">FinSTaR: Towards Financial Reasoning with Time-Series Reasoning Models</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, et al.</div>
+        <div class="venue">KDD Workshop, 2026</div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-w">W5</span></div>
+      <div class="body">
+        <div class="ptitle">Cross-RAG: Zero-Shot Retrieval-Augmented Time Series Forecasting via Cross-Attention</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, et al.</div>
+        <div class="venue">KDD Workshop (MILETS), 2026</div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-w">W4</span></div>
+      <div class="body">
+        <div class="ptitle">Rethinking Multimodal Fusion for Time Series</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, et al.</div>
+        <div class="venue">KDD Workshop (MILETS), 2026</div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-w">W3</span></div>
+      <div class="body">
+        <div class="ptitle">Soft Contrastive Learning for Irregular Time Series</div>
+        <div class="authors">Junghoon Lim, <span class="me">Seunghan Lee</span>, Taeyoung Park</div>
+        <div class="venue">ICML Workshop (Foundation Models for Structured Data), 2025</div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-w">W2</span></div>
+      <div class="body">
+        <div class="ptitle">Partial Channel Dependence with Channel Masks for Time Series Foundation Models</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, Taeyoung Park<sup>†</sup>, Kibok Lee<sup>†</sup></div>
+        <div class="venue">NeurIPS Workshop (Time Series in the Age of Large Models), 2024 &nbsp;·&nbsp; <span class="note">Oral (top 5)</span></div>
+        <div class="meta"><a href="https://arxiv.org/abs/2410.23222">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-w">W1</span></div>
+      <div class="body">
+        <div class="ptitle">Sequential Order-Robust Mamba for Time Series Forecasting</div>
+        <div class="authors"><span class="me">Seunghan Lee</span><span class="eq">*</span>, Juri Hong<span class="eq">*</span>, Kibok Lee<sup>†</sup>, Taeyoung Park<sup>†</sup></div>
+        <div class="venue">NeurIPS Workshop (Time Series in the Age of Large Models), 2024</div>
+        <div class="meta"><a href="https://arxiv.org/abs/2410.23356">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <!-- Journals -->
+    <div class="pub">
+      <div class="tag"><span class="badge b-j">J2</span></div>
+      <div class="body">
+        <div class="ptitle">Hierarchical Multi-Task Learning with Self-Supervised Auxiliary Task</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, Taeyoung Park</div>
+        <div class="venue">The Korean Journal of Applied Statistics, 37(5):631–641, 2024</div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-j">J1</span></div>
+      <div class="body">
+        <div class="ptitle">Improving the Gibbs Sampler</div>
+        <div class="authors">Taeyoung Park, <span class="me">Seunghan Lee</span></div>
+        <div class="venue">WIREs Computational Statistics, 14(2):e1546, 2022</div>
+      </div>
+    </div>
+
+    <p class="muted" style="font-size:14px;margin-top:18px;">
+      <b>Under review.</b> MAD-GL2: Multimodal Adaptive Dynamic Graph Learning with Global
+      and Local Features for Multivariate Time Series Forecasting —
+      <span class="me">Seunghan Lee</span><span class="eq">*</span>, Kibok Lee<span class="eq">*</span>, Taeyoung Park.
+    </p>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="top"><span class="title">KRAFTON — Deep Learning Engineer / Researcher</span><span class="date">2025.05 – present</span></div>
+      <div class="sub">ML R&amp;D Team, Applied DL Dept., AI Research Center</div>
+    </div>
+    <div class="entry">
+      <div class="top"><span class="title">Naver Cloud — AI Research Intern</span><span class="date">2025.03 – 2025.05</span></div>
+      <div class="sub">HyperCLOVA X · multimodal pretraining (vision-language)</div>
+    </div>
+    <div class="entry">
+      <div class="top"><span class="title">SK Telecom — Data Scientist Intern</span><span class="date">2019.07 – 2019.08</span></div>
+      <div class="sub">ICT Infra Center, Data Analytics (AI Home)</div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="top"><span class="title">Yonsei University — Integrated M.S./Ph.D., Statistics &amp; Data Science</span><span class="date">2020 – 2025</span></div>
+      <div class="sub">Co-advised by Prof. Taeyoung Park (DSLab) and Prof. Kibok Lee (ML Lab)</div>
+    </div>
+    <div class="entry">
+      <div class="top"><span class="title">Yonsei University — B.A., Business Administration &amp; Applied Statistics</span><span class="date">2015 – 2020</span></div>
+      <div class="sub">Summa Cum Laude (top 1%), early graduation</div>
+    </div>
+  </section>
+
+  <!-- ===== Honors & Awards ===== -->
+  <section id="awards" class="award">
+    <h2>Honors &amp; Awards</h2>
+    <ul class="tight">
+      <li>Outstanding Paper Award, Korean AI Association (for NeurIPS 2024 paper), 2024</li>
+      <li>ICLR 2024 Spotlight (top 5%) — Soft Contrastive Learning for Time Series</li>
+      <li>NeurIPS 2023 Workshop Oral presentations (top 4 / top 5)</li>
+      <li>1st place, Yonsei Data Science Competition (KCB), 2023</li>
+      <li>Summa Cum Laude, Yonsei University, 2020</li>
+    </ul>
+  </section>
+
+  <!-- ===== Academic Service ===== -->
+  <section id="service" class="service">
+    <h2>Academic Service</h2>
+    <p class="muted" style="margin-bottom:6px;">Reviewer</p>
+    <ul class="tight">
+      <li>ICLR — 2023, 2024, 2025, 2026</li>
+      <li>ICML — 2023, 2024, 2025, 2026</li>
+      <li>NeurIPS — 2023, 2024, 2025</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2026 Seunghan Lee · Last updated June 2026 ·
+    Template inspired by <a href="https://jonbarron.info">Jon Barron</a>'s website.
+  </footer>
+
+</div>
+
+  <script>
+    // Graceful fallback: show initials if no profile photo is present.
+    (function () {
+      var img = document.getElementById('headshot');
+      if (!img) return;
+      img.addEventListener('error', function () {
+        var ph = document.createElement('div');
+        ph.className = 'ph';
+        ph.textContent = 'SL';
+        img.replaceWith(ph);
+      });
+    })();
+  </script>
+</body>
+</html>
