@@ -83,6 +83,11 @@
 
   /* Publications */
   .legend{font-size:14px;color:var(--muted);margin-bottom:16px;}
+  .pubstat{font-size:15px;margin:0 0 7px;font-variant-numeric:tabular-nums;}
+  .pubstat .sep{color:#ccc;margin:0 10px;}
+  .pubstat .chip{display:inline-flex;align-items:center;gap:3px;margin-right:12px;white-space:nowrap;}
+  .pubstat .sub{color:var(--muted);font-size:13px;}
+  .pubstat .note{color:var(--muted);font-size:12.5px;font-style:italic;white-space:nowrap;}
   .badge{
     display:inline-block;min-width:34px;text-align:center;
     font-size:12px;font-weight:700;color:#fff;border-radius:4px;
@@ -226,6 +231,16 @@
   <!-- ===== Publications ===== -->
   <section id="publications">
     <h2>Publications</h2>
+    <!-- Keep these counts in sync when a paper is added below. -->
+    <p class="pubstat">
+      <b>19</b> papers &nbsp;·&nbsp; <b>15</b> as first author
+      <span class="sep">|</span>
+      <span class="chip"><span class="badge b-c">C</span><b>7</b> <span class="sub">(6)</span></span>
+      <span class="chip"><span class="badge b-w">W</span><b>7</b> <span class="sub">(6)</span></span>
+      <span class="chip"><span class="badge b-j">J</span><b>2</b> <span class="sub">(1)</span></span>
+      <span class="chip"><span class="badge b-p">P</span><b>3</b> <span class="sub">(2)</span></span>
+      <span class="note">total (first-author)</span>
+    </p>
     <p class="legend">
       <span class="badge b-c">C</span> Conference &nbsp;
       <span class="badge b-w">W</span> Workshop &nbsp;
