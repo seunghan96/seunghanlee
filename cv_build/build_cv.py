@@ -600,10 +600,13 @@ bullet("② Utilizing textual data and tabular data for TS forecasting.", level=
 bullet([("Key Algorithms", {"b": True}), ": GNN, GAN, Domain Adaptation, SSL with Tabular Data"])
 bullet([("Programming Language", {"b": True}), ": Python"])
 
-h1("6. Invited Talks", space_before=20, space_after=6)
+h1("6. Academic Service", space_before=20, space_after=6)
+bullet([("Reviewer", {"b": True}), ": ICLR (2025, 2026), ICML (2024, 2025, 2026), NeurIPS (2024, 2025), EMNLP (2026), TMLR (2026)"])
+
+h1("7. Invited Talks", space_before=20, space_after=6)
 bullet("2024.08. Korean Artificial Intelligence Association (2024 Summer Conference)")
 
-h1("7. Intellectual Property", space_before=20, space_after=6)
+h1("8. Intellectual Property", space_before=20, space_after=6)
 bullet("2023.10: Review evaluation method using review quality metrics")
 bullet("2024.12: Universal time series analysis method and system for irregular multivariate time series")
 page_break()
@@ -611,12 +614,12 @@ page_break()
 # =====================================================================
 # PAGE 7 — Programming Languages / Instructor & TA
 # =====================================================================
-h1("8. Programming Languages")
+h1("9. Programming Languages")
 bullet([("Proficient", {"b": True}), ": Python (Pytorch, Tensorflow, Numpy, Sklearn)"])
 bullet([("Intermediate", {"b": True}), ": SQL, R"])
 bullet([("Basic", {"b": True}), ": Docker, Kubernetes"])
 
-h1("9. Instructor, Teaching Assistant (TA)", space_before=20, space_after=6)
+h1("10. Instructor, Teaching Assistant (TA)", space_before=20, space_after=6)
 entry("1. [Instructor] Yonsei University Atmospheric Science Department – Data Analysis")
 bullet([("Period", {"b": True}), ": November 2020 – February 2021"])
 bullet([("Tasks", {"b": True}), ": Provided statistical and clustering analysis training for graduate students and assisted with data analysis."])
@@ -641,7 +644,7 @@ page_break()
 # =====================================================================
 # PAGE 8-9 — Academic Society & Club
 # =====================================================================
-h1("10. Academic Society & Club", space_after=10)
+h1("11. Academic Society & Club", space_after=10)
 
 entry("1. ISSU (Yonsei University IT Management Strategy Society)", space_before=2)
 bullet([("Period", {"b": True}), ": March 2018 – December 2018"])
@@ -710,7 +713,7 @@ page_break()
 # =====================================================================
 # PAGE 10 — Certifications & Awards
 # =====================================================================
-h1("11. Certifications & Awards", space_after=10)
+h1("12. Certifications & Awards", space_after=10)
 h2("Certifications", space_before=2, space_after=4)
 
 cert_rows = [
@@ -779,7 +782,7 @@ page_break()
 # =====================================================================
 # PAGE 11 — Projects
 # =====================================================================
-h1("12. Projects", space_after=8)
+h1("13. Projects", space_after=8)
 entry("1. Fine-tuning LLM", space_before=2)
 bullet([("Period", {"b": True}), ": February 2025 – March 2025"])
 bullet([("Tasks", {"b": True}), ": "])
@@ -802,7 +805,7 @@ page_break()
 # =====================================================================
 # PAGE 12-14 — Competitions
 # =====================================================================
-h1("13. Competitions", space_after=8)
+h1("14. Competitions", space_after=8)
 
 
 def comp(title, period, tasks, subs=(), algos=None, result=None, algo_label="Key Algorithms"):
