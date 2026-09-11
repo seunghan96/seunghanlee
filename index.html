@@ -19,6 +19,7 @@
     --badge-w:#2e8b57;
     --badge-j:#9b59b6;
     --badge-p:#7a8794;
+    --badge-t:#c2703d;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
@@ -99,6 +100,7 @@
   .b-w{background:var(--badge-w);}
   .b-j{background:var(--badge-j);}
   .b-p{background:var(--badge-p);}
+  .b-t{background:var(--badge-t);}
   .pub{display:flex;gap:12px;margin-bottom:16px;}
   .pub .tag{flex:0 0 62px;padding-top:1px;white-space:nowrap;}
   /* dual-venue (conference + workshop) papers: two badges on one line */
@@ -256,9 +258,9 @@
       <li>Deep learning for time series
         <ul>
           <li>Multimodal time series forecasting <span class="refs">[W6, C7, C8/W8]</span></li>
-          <li>Time-series foundation models <span class="refs">[W4, C5, W7]</span></li>
+          <li>Time-series foundation models <span class="refs">[W4, C5, W7, T2]</span></li>
           <li>Time-series reasoning <span class="refs">[P1]</span></li>
-          <li>Financial time series <span class="refs">[C7, C8/W8, C9, P2, P3]</span></li>
+          <li>Financial time series <span class="refs">[C7, C8/W8, C9, T1, T2, P2]</span></li>
           <li>Representation learning <span class="refs">[C1/W1, C2/W2]</span></li>
           <li>Others (e.g., SSL, Diffusion) <span class="refs">[C3, C4, W3, W5]</span></li>
         </ul>
@@ -272,13 +274,14 @@
     <h2>Publications</h2>
     <!-- Keep these counts in sync when a paper is added below. -->
     <p class="pubstat">
-      <b>20</b> papers &nbsp;·&nbsp; <b>15</b> as first author
+      <b>21</b> papers &nbsp;·&nbsp; <b>16</b> as first author
     </p>
     <p class="pubstat bytype">
       <span class="chip"><span class="badge b-c">C</span><span class="kind">Conference</span><b>9</b> <span class="sub">(7)</span></span>
       <span class="chip"><span class="badge b-w">W</span><span class="kind">Workshop</span><b>9</b> <span class="sub">(8)</span></span>
       <span class="chip"><span class="badge b-j">J</span><span class="kind">Journal</span><b>2</b> <span class="sub">(1)</span></span>
-      <span class="chip"><span class="badge b-p">P</span><span class="kind">Preprint</span><b>3</b> <span class="sub">(2)</span></span>
+      <span class="chip"><span class="badge b-t">T</span><span class="kind">Tech. report</span><b>2</b> <span class="sub">(1)</span></span>
+      <span class="chip"><span class="badge b-p">P</span><span class="kind">Preprint</span><b>2</b> <span class="sub">(2)</span></span>
       <span class="note">Total (first-author)</span>
     </p>
     <p class="legend">
@@ -495,17 +498,28 @@
       </div>
     </div>
 
-    <!-- Preprints -->
+    <!-- Technical reports -->
     <div class="pub">
-      <div class="tag"><span class="badge b-p">P3</span></div>
+      <div class="tag"><span class="badge b-t">T2</span></div>
+      <div class="body">
+        <div class="ptitle">EXAONE Finance 1.0: An Attention-free Time Series Foundation Model for Financial Time Series</div>
+        <div class="authors"><span class="me">Seunghan Lee</span>, Jaehoon Lee, Jun Seo, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Minjae Kim, Sungdong Yoo, Junhyeok Kang, Sangjun Han, Soonyoung Lee, Wonbin Ahn</div>
+        <div class="venue">Technical report, 2026</div>
+        <div class="meta"><a href="https://arxiv.org/abs/2609.04239">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="tag"><span class="badge b-t">T1</span></div>
       <div class="body">
         <div class="ptitle">FinVerse: Financial Time-Series Benchmark</div>
         <div class="authors">Jaehoon Lee, Jun Seo, <span class="me">Seunghan Lee</span>, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Minjae Kim, Sungdong Yoo, Junhyeok Kang, Sangjun Han, Soonyoung Lee, Wonbin Ahn</div>
-        <div class="venue">arXiv preprint, 2026</div>
+        <div class="venue">Technical report, 2026</div>
         <div class="meta"><a href="https://arxiv.org/abs/2608.03259">[arXiv]</a></div>
       </div>
     </div>
 
+    <!-- Preprints -->
     <div class="pub">
       <div class="tag"><span class="badge b-p">P2</span></div>
       <div class="body">
@@ -542,7 +556,7 @@
   </section>
 
   <footer>
-    © 2026 Seunghan Lee · Last updated August 2026 ·
+    © 2026 Seunghan Lee · Last updated September 2026 ·
     Template inspired by <a href="https://jonbarron.info">Jon Barron</a>'s website.
   </footer>
 
