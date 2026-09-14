@@ -333,10 +333,22 @@ LG_CO = ", Jun Seo, Jaehoon Lee, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan
 LG_CO2 = ", Jaehoon Lee, Jun Seo, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, SoonYoung Lee, Wonbin Ahn"
 
 pub(
+    23,
+    "EXAONE Finance 1.0: An Attention-free Time Series Foundation Model for Financial Time Series (2026)",
+    ["- ", ("Seunghan Lee", ME), ", Jaehoon Lee, Jun Seo, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Minjae Kim, Sungdong Yoo, Junhyeok Kang, Sangjun Han, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("Technical report, 2026. [", VEN), ("LINK", "arxiv:2609.04239", "https://arxiv.org/abs/2609.04239", {"size": 11}), ("]", VEN)],
+)
+pub(
+    22,
+    "Explaining Time Series Forecasting with Horizon-Resolved Attribution (2026)",
+    ["- ", ("Seunghan Lee", ME), ", Jun Seo, Jaehoon Lee, Junhyeok Kang, Sangjun Han, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("arXiv preprint, 2026. [", VEN), ("LINK", "arxiv:2609.12639", "https://arxiv.org/abs/2609.12639", {"size": 11}), ("]", VEN)],
+)
+pub(
     21,
     "FinVerse: Financial Time-Series Benchmark (2026)",
     ["- Jaehoon Lee, Jun Seo, ", ("Seunghan Lee", ME), ", Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Minjae Kim, Sungdong Yoo, Junhyeok Kang, Sangjun Han, Soonyoung Lee, Wonbin Ahn"],
-    ["- In ", ("arXiv preprint, 2026. [", VEN), ("LINK", "arxiv:2608.03259", "https://arxiv.org/abs/2608.03259", {"size": 11}), ("]", VEN)],
+    ["- In ", ("Technical report, 2026. [", VEN), ("LINK", "arxiv:2608.03259", "https://arxiv.org/abs/2608.03259", {"size": 11}), ("]", VEN)],
 )
 pub(
     20,
