@@ -625,7 +625,7 @@ bullet([("Key Algorithms", {"b": True}), ": GNN, GAN, Domain Adaptation, SSL wit
 bullet([("Programming Language", {"b": True}), ": Python"])
 
 h1("6. Academic Service", space_before=20, space_after=6)
-bullet([("Reviewer", {"b": True}), ": ICLR (2025, 2026), ICML (2024, 2025, 2026), NeurIPS (2024, 2025), EMNLP (2026), TMLR (2026)"])
+bullet([("Reviewer", {"b": True}), ": ICLR (2025, 2026, 2027), ICML (2024, 2025, 2026), NeurIPS (2024, 2025, 2026), AAAI (2026), EMNLP (2026), TMLR (2026)"])
 
 h1("7. Invited Talks", space_before=20, space_after=6)
 bullet("2024.08. Korean Artificial Intelligence Association (2024 Summer Conference)")
