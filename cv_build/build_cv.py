@@ -333,6 +333,18 @@ LG_CO = ", Jun Seo, Jaehoon Lee, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan
 LG_CO2 = ", Jaehoon Lee, Jun Seo, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, SoonYoung Lee, Wonbin Ahn"
 
 pub(
+    25,
+    "EXAONE Demand 1.0: A Time Series Foundation Model for Demand Forecasting (2026)",
+    ["- ", ("Seunghan Lee", ME), ", Sangjun Han, Jun Seo, Junhyeok Kang, Jaehoon Lee, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Minjae Kim, Sungdong Yoo, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("Technical report, 2026. [", VEN), ("LINK", "arxiv:2609.30880", "https://arxiv.org/abs/2609.30880", {"size": 11}), ("]", VEN)],
+)
+pub(
+    24,
+    "PALM: Point-in-Time Adaptation for Financial Language Models (2026)",
+    ["- ", ("Seunghan Lee", ME), ", Jun Seo, Jaehoon Lee, Junhyeok Kang, Sangjun Han, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("arXiv preprint, 2026. [", VEN), ("LINK", "arxiv:2609.30316", "https://arxiv.org/abs/2609.30316", {"size": 11}), ("]", VEN)],
+)
+pub(
     23,
     "EXAONE Finance 1.0: An Attention-free Time Series Foundation Model for Financial Time Series (2026)",
     ["- ", ("Seunghan Lee", ME), ", Jaehoon Lee, Jun Seo, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Minjae Kim, Sungdong Yoo, Junhyeok Kang, Sangjun Han, Soonyoung Lee, Wonbin Ahn"],
