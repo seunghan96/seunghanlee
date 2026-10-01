@@ -333,6 +333,18 @@ LG_CO = ", Jun Seo, Jaehoon Lee, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan
 LG_CO2 = ", Jaehoon Lee, Jun Seo, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, SoonYoung Lee, Wonbin Ahn"
 
 pub(
+    27,
+    "Quantile Alignment Improves Zero-Shot Time-Series Foundation Models (2026)",
+    ["- Junhyeok Kang, Sangjun Han, Jun Seo, ", ("Seunghan Lee", ME), ", Jaehoon Lee, Dongwan Kang, Minjae Kim, Sungdong Yoo, Tae Yoon Lim, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("NeurIPSW (FMTS), 2026. [TBD]", VEN)],
+)
+pub(
+    26,
+    "Composite Kernel Decomposition of Gaussian Process for Time-Series Foundation Models (2026)",
+    ["- Sangjun Han, Hyunoh Yeo, Joanie Hayoun Chung, Junhyeok Kang, ", ("Seunghan Lee", ME), ", Jaehoon Lee, Jun Seo, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Minjae Kim, Sungdong Yoo, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("NeurIPSW (FMTS), 2026. [TBD]", VEN)],
+)
+pub(
     25,
     "EXAONE Demand 1.0: A Time Series Foundation Model for Demand Forecasting (2026)",
     ["- ", ("Seunghan Lee", ME), ", Sangjun Han, Jun Seo, Junhyeok Kang, Jaehoon Lee, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Minjae Kim, Sungdong Yoo, Soonyoung Lee, Wonbin Ahn"],
