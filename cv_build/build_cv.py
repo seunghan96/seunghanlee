@@ -461,7 +461,7 @@ pub(
 pub(
     12,
     "Mitigating Label Shift in Tabular In-Context Learning via Test-Time Posterior Adjustment (2026)",
-    ["- ", ("Seunghan Lee", ME), LG_CO2],
+    ["- ", ("Seunghan Lee", ME)],
     ["- In ", ("ICML, 2026. [", VEN), ("LINK", "arxiv:2605.04363", "https://arxiv.org/abs/2605.04363", {"size": 11}), ("]", VEN)],
 )
 pub(
