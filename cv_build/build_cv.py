@@ -354,7 +354,7 @@ pub(
     22,
     "Explaining Time Series Forecasting with Horizon-Resolved Attribution (2026)",
     ["- ", ("Seunghan Lee", ME), ", Jun Seo, Jaehoon Lee, Junhyeok Kang, Sangjun Han, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
-    ["- In ", ("arXiv preprint, 2026. [", VEN), ("LINK", "arxiv:2609.12639", "https://arxiv.org/abs/2609.12639", {"size": 11}), ("]", VEN)],
+    ["- In ", ("NeurIPSW (XAI4Science), 2026. [", VEN), ("LINK", "arxiv:2609.12639", "https://arxiv.org/abs/2609.12639", {"size": 11}), ("]", VEN)],
 )
 pub(
     21,
