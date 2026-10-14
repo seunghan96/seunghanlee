@@ -300,7 +300,7 @@ bullet("Agentic Time Series Forecasting", level=2)
 bullet("Time Series Foundation Models", level=2)
 bullet("Financial Time Series", level=2)
 bullet("Representation Learning", level=2)
-bullet("Others (e.g., Self-Supervised Learning, Diffusion Models)", level=2)
+bullet("Others (e.g., Self-Supervised Learning, Diffusion Models, Anomaly Detection)", level=2)
 bullet([("Deep Learning for Tabular / Graphs", {"b": True})])
 page_break()
 
@@ -332,6 +332,12 @@ ORAL = {"c": ORANGE, "size": 11}
 LG_CO = ", Jun Seo, Jaehoon Lee, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, SoonYoung Lee, Wonbin Ahn"
 LG_CO2 = ", Jaehoon Lee, Jun Seo, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, SoonYoung Lee, Wonbin Ahn"
 
+pub(
+    28,
+    "OneShot: Label-Efficient Detector Weighting for Time Series Anomaly Detection (2026)",
+    ["- ", ("Seunghan Lee", ME), ", Jun Seo, Jaehoon Lee, Junhyeok Kang, Sangjun Han, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("arXiv preprint, 2026. [", VEN), ("LINK", "arxiv:2610.16219", "https://arxiv.org/abs/2610.16219", {"size": 11}), ("]", VEN)],
+)
 pub(
     27,
     "Quantile Alignment Improves Zero-Shot Time-Series Foundation Models (2026)",
