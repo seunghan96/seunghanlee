@@ -335,6 +335,12 @@ LG_CO = ", Jun Seo, Jaehoon Lee, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan
 LG_CO2 = ", Jaehoon Lee, Jun Seo, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, SoonYoung Lee, Wonbin Ahn"
 
 pub(
+    29,
+    "Implied Volatility Surface Forecasting Under Earnings-Driven Distribution Shift: Transfer from Ordinary Trading Days (2026)",
+    ["- Hyunoh Yeo, Jaehoon Lee, ", ("Seunghan Lee", ME), ", Jun Seo, Junhyeok Kang, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Sangjun Han, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("ICAIFW (AI-Driven Market Microstructure in Centralized and Decentralized Finance), 2026. [TBD]", VEN)],
+)
+pub(
     28,
     "OneShot: Label-Efficient Detector Weighting for Time Series Anomaly Detection (2026)",
     ["- ", ("Seunghan Lee", ME), ", Jun Seo, Jaehoon Lee, Junhyeok Kang, Sangjun Han, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
