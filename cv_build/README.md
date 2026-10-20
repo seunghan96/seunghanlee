@@ -18,3 +18,11 @@ cp ../cv_candidates/SeunghanLee_CV_banner.docx ../SeunghanLee_CV.docx
   `gulim_*.ttf` in this directory; those are proprietary subsets and are gitignored,
   so a fresh clone can build `banner` but not `classic`.
 - Needs `python-docx`, `reportlab`, `fontTools` (and `pymupdf` to inspect the result).
+
+## Publishing
+
+The homepage's CV link points to `https://seunghan96.github.io/assets/pdf/SeunghanLee_CV.pdf`
+(the separate `seunghan96.github.io` repo), not to the copy in this repo.
+`sync_site_cv.sh` mirrors `../SeunghanLee_CV.pdf` there. `.git/hooks/pre-push` runs it
+on every push, and `.git/hooks/pre-commit` refuses commits that change `index.html`
+without the CV.
