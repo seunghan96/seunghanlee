@@ -486,7 +486,7 @@ pub(
 )
 pub(
     10,
-    "Soft Contrastive Learning for Irregular Time Series (2025)",
+    "Soft Contrastive Learning for Irregular Multivariate Time Series (2025)",
     ["- Junghoon Lim, ", ("Seunghan Lee", ME), ", Taeyoung Park"],
     ["- In ", ("ICMLW (Foundation Models for Structured Data), 2025.", VEN)],
 )
