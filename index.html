@@ -12,6 +12,7 @@
   :root{
     --ink:#222;
     --muted:#666;
+    --co:#a6a6a6;  /* co-author news: lighter than --muted so it reads apart from first-author lines */
     --link:#1772d0;
     --link-hover:#f09228;
     --rule:#e6e6e6;
@@ -74,9 +75,10 @@
   .news .who{flex:0 0 auto;color:var(--muted);font-size:13px;font-style:italic;white-space:nowrap;padding-left:10px;}
   .hsub{font-size:inherit;font-weight:inherit;color:inherit;}
   /* Co-author news in muted grey; first-author stays in the body colour. */
-  .news li.co .what{color:var(--muted);}
+  .news li.co .what,.nlegend .co{color:var(--co);}
+  .news li.year{font-weight:700;margin:12px 0 5px;}
+  .news li.year:first-child{margin-top:0;}
   .nlegend{font-size:13px;font-weight:400;margin-left:6px;}
-  .nlegend .co{color:var(--muted);}
   .refs{color:var(--muted);font-size:13px;font-weight:400;}
 
   /* Generic two-col entry lists (experience, education) */
@@ -128,7 +130,7 @@
   @media (max-width:560px){
     header.intro{flex-direction:column-reverse;align-items:center;text-align:center;}
     .links a{white-space:normal;}
-    .news li{flex-direction:column;gap:0;}
+    .news li:not(.year){flex-direction:column;gap:0;}
     .news .when{flex-basis:auto;}
     .intro .role,.links{text-align:center;}
   }
@@ -245,22 +247,26 @@
   <section id="news" class="news">
     <h2>News <span class="nlegend">First author &nbsp;·&nbsp; <span class="co">Co-author</span></span></h2>
     <ul>
-      <li><span class="when">2026.10</span><span class="what">1 paper accepted to an <b>ICAIF 2026</b> workshop — 1 <span class="note">Oral</span>.</span></li>
-      <li class="co"><span class="when">2026.10</span><span class="what">1 paper accepted to an <b>ICAIF 2026</b> workshop.</span></li>
-      <li><span class="when">2026.10</span><span class="what">1 paper accepted to a <b>NeurIPS 2026</b> workshop.</span></li>
-      <li class="co"><span class="when">2026.10</span><span class="what">2 papers accepted to a <b>NeurIPS 2026</b> workshop.</span></li>
-      <li><span class="when">2026.08</span><span class="what">1 paper accepted to <b>EMNLP 2026</b>.</span></li>
-      <li class="co"><span class="when">2026.08</span><span class="what">1 paper accepted to <b>EMNLP 2026</b>.</span></li>
-      <li><span class="when">2026.06</span><span class="what">4 papers accepted to <b>KDD 2026</b> workshops — 4 <span class="note">Oral</span>.</span></li>
-      <li class="co"><span class="when">2026.05</span><span class="what">1 paper accepted to <b>KDD 2026</b>.</span></li>
-      <li><span class="when">2026.04</span><span class="what">1 paper accepted to <b>ICML 2026</b>.</span></li>
-      <li><span class="when">2026.01</span><span class="what">1 paper accepted to <b>ICASSP 2026</b>.</span></li>
-      <li class="co"><span class="when">2025.06</span><span class="what">1 paper accepted to an <b>ICML 2025</b> workshop.</span></li>
-      <li><span class="when">2025.05</span><span class="what">1 paper accepted to <b>ICML 2025</b>.</span></li>
-      <li><span class="when">2024.10</span><span class="what">2 papers accepted to a <b>NeurIPS 2024</b> workshop — 1 <span class="note">Oral</span>.</span></li>
-      <li><span class="when">2024.09</span><span class="what">1 paper accepted to <b>NeurIPS 2024</b>.</span></li>
-      <li><span class="when">2024.01</span><span class="what">2 papers accepted to <b>ICLR 2024</b> — 1 <span class="note">Spotlight</span>.</span></li>
-      <li><span class="when">2023.10</span><span class="what">2 papers accepted to a <b>NeurIPS 2023</b> workshop — 1 <span class="note">Oral</span>.</span></li>
+      <li class="year">2026</li>
+      <li><span class="when">Oct</span><span class="what">1 paper accepted to an <b>ICAIF 2026</b> workshop — 1 <span class="note">Oral</span>.</span></li>
+      <li class="co"><span class="when">Oct</span><span class="what">1 paper accepted to an <b>ICAIF 2026</b> workshop.</span></li>
+      <li><span class="when">Oct</span><span class="what">1 paper accepted to a <b>NeurIPS 2026</b> workshop.</span></li>
+      <li class="co"><span class="when">Oct</span><span class="what">2 papers accepted to a <b>NeurIPS 2026</b> workshop.</span></li>
+      <li><span class="when">Aug</span><span class="what">1 paper accepted to <b>EMNLP 2026</b>.</span></li>
+      <li class="co"><span class="when">Aug</span><span class="what">1 paper accepted to <b>EMNLP 2026</b>.</span></li>
+      <li><span class="when">Jun</span><span class="what">4 papers accepted to <b>KDD 2026</b> workshops — 4 <span class="note">Oral</span>.</span></li>
+      <li class="co"><span class="when">May</span><span class="what">1 paper accepted to <b>KDD 2026</b>.</span></li>
+      <li><span class="when">Apr</span><span class="what">1 paper accepted to <b>ICML 2026</b>.</span></li>
+      <li><span class="when">Jan</span><span class="what">1 paper accepted to <b>ICASSP 2026</b>.</span></li>
+      <li class="year">2025</li>
+      <li class="co"><span class="when">Jun</span><span class="what">1 paper accepted to an <b>ICML 2025</b> workshop.</span></li>
+      <li><span class="when">May</span><span class="what">1 paper accepted to <b>ICML 2025</b>.</span></li>
+      <li class="year">2024</li>
+      <li><span class="when">Oct</span><span class="what">2 papers accepted to a <b>NeurIPS 2024</b> workshop — 1 <span class="note">Oral</span>.</span></li>
+      <li><span class="when">Sep</span><span class="what">1 paper accepted to <b>NeurIPS 2024</b>.</span></li>
+      <li><span class="when">Jan</span><span class="what">2 papers accepted to <b>ICLR 2024</b> — 1 <span class="note">Spotlight</span>.</span></li>
+      <li class="year">2023</li>
+      <li><span class="when">Oct</span><span class="what">2 papers accepted to a <b>NeurIPS 2023</b> workshop — 1 <span class="note">Oral</span>.</span></li>
     </ul>
   </section>
 
