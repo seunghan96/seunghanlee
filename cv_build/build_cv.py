@@ -303,6 +303,7 @@ bullet("Others (e.g., Self-Supervised Learning, Diffusion Models, Anomaly Detect
 bullet([("AI for Finance", {"b": True})])
 bullet("Financial Time Series", level=2)
 bullet("Financial Language Models", level=2)
+bullet([("LLMs for Decision Making", {"b": True})])
 bullet([("Deep Learning for Tabular / Graphs", {"b": True})])
 page_break()
 
@@ -334,6 +335,12 @@ ORAL = {"c": ORANGE, "size": 11}
 LG_CO = ", Jun Seo, Jaehoon Lee, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, SoonYoung Lee, Wonbin Ahn"
 LG_CO2 = ", Jaehoon Lee, Jun Seo, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, SoonYoung Lee, Wonbin Ahn"
 
+pub(
+    30,
+    "Not All Information Is Worth Asking For: Decision-Informed Information Seeking with LLMs (2026)",
+    ["- ", ("Seunghan Lee", ME), ", Jun Seo, Junhyeok Kang, Jaehoon Lee, Sangjun Han, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("arXiv preprint, 2026. [", VEN), ("LINK", "arxiv:2610.32181", "https://arxiv.org/abs/2610.32181", {"size": 11}), ("]", VEN)],
+)
 pub(
     29,
     "Implied Volatility Surface Forecasting Under Earnings-Driven Distribution Shift: Transfer from Ordinary Trading Days (2026)",
