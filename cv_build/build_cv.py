@@ -355,9 +355,9 @@ pub(
 )
 pub(
     27,
-    "Quantile Alignment Improves Zero-Shot Time-Series Foundation Models (2026)",
+    "QUAL: Quantile Alignment Improves Zero-Shot Time-Series Foundation Models (2026)",
     ["- Junhyeok Kang, Sangjun Han, Jun Seo, ", ("Seunghan Lee", ME), ", Jaehoon Lee, Dongwan Kang, Minjae Kim, Sungdong Yoo, Tae Yoon Lim, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
-    ["- In ", ("NeurIPSW (FMTS), 2026. [TBD]", VEN)],
+    ["- In ", ("NeurIPSW (FMTS), 2026. [", VEN), ("LINK", "arxiv:2610.41100", "https://arxiv.org/abs/2610.41100", {"size": 11}), ("]", VEN)],
 )
 pub(
     26,
