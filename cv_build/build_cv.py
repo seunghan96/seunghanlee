@@ -788,6 +788,7 @@ cert_rows = [
     ("", "SQLD (SQL Developer)", "", "2020.06"),
     ("", "Big Data Analyst", "", "2021.07"),
     ("", "AWS Cloud Practitioner", "", "2021.08"),
+    ("Finance", "Certified Investment Manager (KOFIA)", "-", "2026.11"),
     ("Linguistics", "TOEIC", "965/990", "2020.08"),
     ("Etc.", "Korean History Proficiency Test", "Level 1", "2012.08"),
     ("", "TESAT (Korean Economic Newspaper)", "S-Level", "2013.05"),
@@ -810,8 +811,8 @@ cert.cell(1, 0).merge(cert.cell(5, 0))
 cell_text(cert.cell(1, 0), "CS/Data", align=C)
 cert.cell(1, 2).merge(cert.cell(5, 2))
 cell_text(cert.cell(1, 2), "-", align=C)
-cert.cell(7, 0).merge(cert.cell(8, 0))
-cell_text(cert.cell(7, 0), "Etc.", align=C)
+cert.cell(8, 0).merge(cert.cell(9, 0))
+cell_text(cert.cell(8, 0), "Etc.", align=C)
 
 h2("Awards", space_before=16, space_after=4)
 award_rows = [
