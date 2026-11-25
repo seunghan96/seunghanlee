@@ -336,6 +336,12 @@ LG_CO = ", Jun Seo, Jaehoon Lee, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan
 LG_CO2 = ", Jaehoon Lee, Jun Seo, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, SoonYoung Lee, Wonbin Ahn"
 
 pub(
+    32,
+    "VISOR: A Vision-Language Selector for Multimodal Time-Series Forecasting (2026)",
+    ["- ", ("Seunghan Lee", ME), ", Jun Seo, Junhyeok Kang, Jaehoon Lee, Sangjun Han, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
+    ["- In ", ("arXiv preprint, 2026. [", VEN), ("LINK", "arxiv:2611.31780", "https://arxiv.org/abs/2611.31780", {"size": 11}), ("]", VEN)],
+)
+pub(
     31,
     "Right Numbers, Wrong Story: When LLMs Narrate Financial Changes Beyond Their Inputs (2026)",
     ["- ", ("Seunghan Lee", ME), ", Jun Seo, Junhyeok Kang, Jaehoon Lee, Sangjun Han, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn"],
