@@ -795,25 +795,26 @@ h1("12. Certifications & Awards", space_after=10)
 h2("Certifications", space_before=2, space_after=4)
 
 cert_rows = [
-    ("CS/Data", "ADSP (Associate Data Science Professional)", "-", "2018.09"),
-    ("", "Computer Proficiency Level 1", "", "2019.03"),
-    ("", "SQLD (SQL Developer)", "", "2020.06"),
-    ("", "Big Data Analyst", "", "2021.07"),
-    ("", "AWS Cloud Practitioner", "", "2021.08"),
-    ("Finance", "Certified Investment Manager (KOFIA)", "-", "2026.11"),
-    ("Linguistics", "TOEIC", "965/990", "2020.08"),
-    ("Etc.", "Korean History Proficiency Test", "Level 1", "2012.08"),
-    ("", "TESAT (Korean Economic Newspaper)", "S-Level", "2013.05"),
+    ("CS/Data", "ADSP (Associate Data Science Professional)", "-", "2018.09", "ADsP-0181651"),
+    ("", "Computer Proficiency Level 1", "", "2019.03", "19-K9-014269"),
+    ("", "SQLD (SQL Developer)", "", "2020.06", "SQLD-0372572"),
+    ("", "Big Data Analyst", "", "2021.07", "BAE-002001082"),
+    ("", "AWS Cloud Practitioner", "", "2021.08", "-"),
+    ("Finance", "Certified Investment Manager (KOFIA)", "-", "2026.11", "-"),
+    ("Linguistics", "TOEIC", "965/990", "2020.08", "-"),
+    ("Etc.", "Korean History Proficiency Test", "Level 1", "2012.08", "-"),
+    ("", "TESAT (Korean Economic Newspaper)", "S-Level", "2013.05", "-"),
 ]
-cert = doc.add_table(rows=1 + len(cert_rows), cols=4, style="Table Grid")
+cert = doc.add_table(rows=1 + len(cert_rows), cols=5, style="Table Grid")
 cert.autofit = False
 cw = [Cm(2.2), Cm(9.2), Cm(2.6), Cm(3.2)]
-for i, w in enumerate(cw):
+cert_cw = [Cm(2.0), Cm(7.1), Cm(2.2), Cm(2.2), Cm(3.7)]
+for i, w in enumerate(cert_cw):
     cert.columns[i].width = w
 for row in cert.rows:
-    for i, w in enumerate(cw):
+    for i, w in enumerate(cert_cw):
         row.cells[i].width = w
-for i, t in enumerate(["Field", "Certifications", "Score", "Date"]):
+for i, t in enumerate(["Field", "Certifications", "Score", "Date", "Reg. No."]):
     cell_text(cert.cell(0, i), t, bold=True, size=12.8, align=C)
     shade(cert.cell(0, i), "D9E2F3")
 for r, vals in enumerate(cert_rows, start=1):
